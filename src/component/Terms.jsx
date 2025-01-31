@@ -1,6 +1,6 @@
 import React from 'react'
-import addimg from "./Image/add.png";
-import discount from "./Image/discount.png";
+import addimg from "../assets/Image/add.png";
+import discount from "../assets/Image/discount.png";
 
 function Terms() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import check from "./Image/check.png"
+import check from "../assets/Image/check.png";
 function Header() {
   return (
     <div>

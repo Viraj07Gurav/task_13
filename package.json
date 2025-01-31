@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Viraj07Gurav.github.io/task_13",
 
   "scripts": {
     "dev": "vite",

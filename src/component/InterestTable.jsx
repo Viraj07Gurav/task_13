@@ -1,6 +1,10 @@
 import React from 'react'
 
-function Interest() {
+function Interest({rate,term,amount}) {
+  let days=Math.round(term*30.41) ;
+  console.log(days);
+  let interest=(((amount*rate/100)/365)*days).toFixed(2);
+  console.log(interest); 
   return (
     <div>
       <div className='flex justify-between '>
@@ -11,9 +15,9 @@ function Interest() {
         </div>
 
         <div className="text-end">
-          <p className="mb-3 text-white text-white text-xl  rate" id="percent">15%</p>
-          <p className="mb-3 text-white text-white text-xl rate" id="interest">15001.64 ₽</p>
-          <p className="mb-3 text-white text-white text-xl rate" id="days">365 days</p>
+          <p className="mb-3 text-white text-white text-xl  rate" id="percent">{rate} %</p>
+          <p className="mb-3 text-white text-white text-xl rate" id="interest">{interest} ₽</p>
+          <p className="mb-3 text-white text-white text-xl rate" id="days">{days} days</p>
         </div>
       </div>
       <p className="mx-2 text-gray-400" id="text">

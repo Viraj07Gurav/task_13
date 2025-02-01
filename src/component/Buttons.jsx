@@ -1,21 +1,21 @@
 import React from 'react'
 
-function Buttons() {
+function Buttons({onButtonclick}) {
   return (
     <div className='mt-6 p-2'>
         <div>
             <div className='grid grid-cols-4 gap-2'>
                 <div>
-                    <button className='text-white bg-gray-900  border border-transparent active:border-white focus:ring" rounded-xl text-white h-10 w-18' >3 mon</button>
+                    <button className='text-white bg-gray-900  border border-transparent active:border-white focus:ring" rounded-xl text-white h-10 w-18' onClick={()=>onButtonclick(3,8)} >3 mon</button>
                 </div>
                 <div>
-                    <button className='text-white bg-gray-900  border border-transparent active:border-white focus:ring" rounded-xl text-white h-10 w-18' >6 mon</button>
+                    <button className='text-white bg-gray-900  border border-transparent active:border-white focus:ring" rounded-xl text-white h-10 w-18' onClick={()=>onButtonclick(6,10)} >6 mon</button>
                 </div>
                 <div>
-                    <button className='text-white bg-gray-900  border border-transparent active:border-white focus:ring" rounded-xl text-white h-10 w-18' >1 year</button>
+                    <button className='text-white bg-gray-900  border border-transparent active:border-white focus:ring" rounded-xl text-white h-10 w-18' onClick={()=>onButtonclick(12,15)}>1 year</button>
                 </div>
                 <div>
-                    <button className='text-white bg-gray-900  border border-transparent active:border-white focus:ring" rounded-xl text-white h-10 w-18' >2 years</button>
+                    <button className='text-white bg-gray-900  border border-transparent active:border-white focus:ring" rounded-xl text-white h-10 w-18' onClick={()=>onButtonclick(24,20)}>2 years</button>
                 </div>
 
             </div>
